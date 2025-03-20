@@ -341,7 +341,7 @@ textarea:focus::placeholder {
 }
 
 /* --- RESPONSIVE DESIGN --- */
-@media (min-width: 370px) and (max-width: 490px) {
+@media (min-width: 350px) and (max-width: 490px) {
     .content {
         display: flex;
         flex-direction: column;
