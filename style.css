@@ -1,0 +1,801 @@
+/* Reset & General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://raw.githubusercontent.com/spystar20/food-business.sania/04c95127b73450754698663442642c7fcefb896c/bg.png.jpeg') no-repeat center center/cover;
+    height: 50vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.left img {
+    height: 70px;
+    max-width: 100%;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+
+.right button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #e7d10c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    max-width: 150px;
+}
+
+.right button:hover {
+    background-color: grey;
+}
+
+/* Content Section */
+/* .content {
+    display: flex
+    ;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 20px;
+} */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.about-us {
+    width: 50%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+.about-us p {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 700px;
+    margin: 5px 0;
+    /* Reduced margin for tighter spacing */
+    line-height: 1.2;
+    /* Even tighter line spacing */
+    gap: 3px;
+    /* Minimal gap between text lines */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+
+.about-us .line1 {
+    color: #fff;
+    font-size: 30px;
+    /* Slightly smaller for better fit */
+    font-weight: 700;
+}
+
+.about-us .line2 {
+    color: #ffcc00;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 2px;
+    /* Further reduced top margin */
+}
+
+.about-us .line3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 2px;
+    /* Minimal spacing */
+}
+
+.about-us .line4 {
+    color: #ffcc00;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 2px;
+    /* Minimal spacing */
+}
+
+.about-us .spacer {
+    margin-bottom: 3px;
+    /* Reduced spacing between rows */
+}
+
+.about-us .line-divider {
+    width: 100%;
+    /* Full-width */
+    height: 3px;
+    /* Thickness of the line */
+    background-color: #fff;
+    /* Yellow line for contrast */
+    margin-top: 10px;
+    /* Spacing between text and line */
+    border: none;
+
+}
+
+/* Investment Text */
+.about-us .investment-text {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    /* WhatsApp Green */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+}
+
+
+/* Enquiry Form */
+.form-container {
+    width: 40%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font: bolder;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 22px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+/* Change placeholder text color */
+::placeholder {
+    color: #221f1f; 
+}
+
+/* Apply to input and textarea */
+input::placeholder,
+textarea::placeholder {
+    color: #221f1f;
+    font-weight: normal; /* Keeps default font weight */
+}
+
+/* Ensure placeholder color remains the same on focus */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #1a1818;
+}
+
+.form-container .submit-btn {
+    width: 100%;
+    background-color: #e7d10c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .submit-btn:hover {
+    background-color: grey;
+}
+
+/* Footer */
+.footer1 {
+    width: 100vw;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer1-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer1-item:not(:last-child)::after {
+
+    color: white;
+    font-size: 20px;
+}
+
+.square-image {
+    width: 1000px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .why-invest {
+        width: 90%;
+    }
+
+    .benefits div {
+        width: 100%;
+    }
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.benefit-box {
+    background-color: #fff;
+    border: 3px solid #ffcc00;
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.benefit-box:hover {
+    background-color: #ffcc00;
+    color: #000;
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (min-width: 370px) and (max-width: 490px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 1rem 20px;
+            gap: 1rem;
+    }
+    .left img {
+        height: 2.6rem;
+        max-width: 100%;
+    }
+    .right button {
+        padding: 7px 11px}
+
+    .about-us {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 94%;
+        border: 2px solid black;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+}
+
+.about {
+
+    padding: 40px 20px;
+    background-image: url('https://raw.githubusercontent.com/spystar20/food-business.sania/04c95127b73450754698663442642c7fcefb896c/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.about img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.about-us .line1{
+    color: #ffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.about-us .line2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.about-us .line3 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.about-us .line4{
+    color: #ffcc00;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.about-content {
+  
+    padding: 20px;
+}
+.whatsapp-btn{
+    
+    padding: 2px 15px;
+}
+
+.about-content span {
+    color: #0c0c0b;
+    font-weight: bold;
+}
+
+
+.models-container {
+    display: flex;
+        flex-direction: column;
+        gap: 2rem;
+}
+
+.model-box {
+    background-color: #fff;
+    border: 3px solid #ffcc00;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 70vw;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.model-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.model-heading {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.model-details {
+    font-size: 14px;
+    margin-bottom: 10px;
+    /* Reduced Space for Compact Look */
+    opacity: 0.9;
+}
+
+.price-details {
+    background-color: #ffcc00;
+    padding: .5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    color: #333;
+}
+
+.model-box:hover .price-details {
+    background-color: #fff;
+    color: #d9534f;
+}
+
+.arrow {
+    font-size: 2.4rem;
+    /* Extra Bold Arrow */
+    color: #000;
+    
+    /* Maximum Boldness */
+    margin: 10px 0;
+    /* Reduced Space for Balanced Layout */
+}
+
+.highlight-text {
+    color: #080808;
+    font-weight: bold;
+}
+
+
+
+h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    background-color: #FFD700;
+    margin: .5rem auto 0;
+    border-radius: 2px;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.category {
+    transition: color 0.3s ease;
+}
+
+.category:hover {
+    color: #ff6600;
+}
+
+.category-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 3rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    position: relative;
+    display: block;
+}
+
+
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* Evenly spaces items in a row */
+    align-items: flex-start;
+    /* Aligns content vertically */
+    gap: 40px;
+    /* Adds spacing between items */
+    flex-wrap: nowrap;
+    /* Prevents content from wrapping */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    border-top: 3px solid #333;
+    width: 100vw;
+}
+
+.footer-column {
+    flex: 1;
+    /* Ensures columns stay balanced */
+    text-align: center;
+    /* Centers text within each section */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    /* Ensures logo and text align properly */
+    gap: 10px;
+    /* Adds spacing between logo and text */
+}
+
+.footer-logo img {
+    max-width: 100px;
+    /* Controls logo size */
+    height: auto;
+    /* Maintains aspect ratio */
+    display: block;
+    /* Prevents inline spacing issues */
+}
+
+.footer h2 {
+    text-align: left;
+    /* Aligns headings to the left */
+    width: 100%;
+    /* Ensures full width for consistent alignment */
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* Proper sizing for professional look */
+    color: #fff;
+    /* White text for clear contrast */
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #aaa;
+    /* Soft grey text for readability */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+    /* Subtle yellow hover effect for interactivity */
+}
+
+.footer .stay-connected a {
+    background-color: #333;
+    /* Darker buttons to blend with the design */
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: background 0.3s ease;
+}
+
+.footer .stay-connected a:hover {
+    background-color: #ffcc00;
+    color: #121212;
+}
+
+.contact-us {
+    order: -1;
+    /* Moves Contact Us to the first position */
+    width: 100%;
+    /* Ensures it spans full width if needed */
+}
+
+.footer .footer-column,
+.footer .contact-details,
+.footer .address {
+    text-align: left;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+.container {
+    max-width:100%;
+    margin: auto;
+    
+}
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6347;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+/* Section Styling */
+.section {
+    padding: .3rem 0;
+}
+
+
+/* Row for images */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+
+.row img {
+    width: 140px;
+    ;
+    height: 200px;
+    ;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.testimonials-section {
+    margin-top: 0;
+    padding: 0;
+}
+
+.testimonials-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 4rem;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.testimonials-subheading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000000;
+    padding-left: 7rem;
+    border-bottom: none;
+}
+.testimonials-subheading::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    background-color: #FFD700;
+    margin: .5rem auto 0;
+    border-radius: 2px;
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+}
+
+.video-container video {
+    width: 360px;
+    height:180px;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.video-container video:hover {
+    transform: scale(1.05);
+}
+
+.testimonials-section {
+    margin-top: 2px;
+    padding-top: 2px;
+    /* Reduce padding */
+}
+
+.previous-section {
+    margin-bottom: 2px;
+    /* Reduce the gap */
+}
+
+
+@media (max-width: 768px) {
+    .video-container video {
+        width: 80%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px){
+
+  
+}
